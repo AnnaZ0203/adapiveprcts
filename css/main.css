@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .hero {
@@ -40,6 +41,7 @@ body {
     gap: 50px;
     justify-content: space-between;
     text-align: left;
+    align-items: flex-start;
   }
 }
 
@@ -56,6 +58,13 @@ body {
   text-align: inherit;
   margin-bottom: 21px;
 }
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+}
 
 .hero-text {
   font-family: "Heebo", sans-serif;
@@ -66,23 +75,63 @@ body {
   text-align: inherit;
   margin-bottom: 27px;
 }
+@media (min-width: 1024px) {
+  .hero-text {
+    margin-bottom: 38px;
+  }
+}
 
 .hero-btn {
   display: block;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0px;
   color: #fff;
   background-color: #FF6464;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 21px;
-  padding-right: 21px;
+  border: none;
+  padding: 13px 20px;
+  margin-bottom: 59px;
+}
+@media (min-width: 1024px) {
+  .hero-btn {
+    margin-left: 0;
+  }
 }
 
 .hero-img {
+  min-width: 174px;
   display: block;
-  margin-bottom: 43px;
+  margin-bottom: 34px;
+}
+@media (min-width: 1024px) {
+  .hero-img {
+    max-width: 234px;
+  }
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.mob-open {
+  display: block;
+  margin-left: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.is-hidden {
+  display: none;
 }

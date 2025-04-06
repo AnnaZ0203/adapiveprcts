@@ -1,0 +1,21 @@
+.header{
+    padding: 20px 0;
+    
+}
+.mob-open{
+    display: block;
+    margin-left: 0;
+    background-color: transparent;
+    border: none;
+}
+.mob-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.is-hidden{
+    display: none;
+}

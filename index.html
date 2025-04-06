@@ -11,7 +11,21 @@
     
 </head>
 <body>
-    <header></header>
+    <header class="container header">
+        <button type="button" class="mob-open" data-mob-open>
+        <img src="./img/menu.png" alt="">
+        </button>
+        <div class="mob-menu is-hidden" data-mob>
+             <button type="button" class="mob-close" data-mob-close>X</button>
+            <nav>
+                <ul class="mob-list">
+                    <li><a href=""></a>Work</li>
+                    <li><a href=""></a>Blog</li>
+                    <li><a href=""></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="container hero">
                 <div class="hero-wrap">
@@ -24,5 +38,6 @@ Creative Technologist</h1>
     
         </section>
     </main>
+    <script src="./menu.js"></script>
 </body>
 </html>
